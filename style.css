@@ -24,7 +24,7 @@
 
     --p-411: 1.2rem;
     --p-768: 1.1rem;
-    --p-1280: 1.1rem;
+    --p-1280: 1rem;
     --p-1600: 1.4rem;
 }
 
@@ -430,7 +430,7 @@ header .header-desc p {
 /* SECTION PROJECTS --------------------------------*/
 
 .projects {
-    margin: 50px 8vw 0;
+    padding: 50px 8vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -442,14 +442,9 @@ header .header-desc p {
     padding: 10px;
 }
 
-
 .projects-box {
     width: 280px;
-    margin-top: 60px
-}
-
-.projects-box p:first-of-type {
-    padding-bottom: 20px;
+    margin-top: 50px
 }
 
 .projects .info h3 {
@@ -466,7 +461,65 @@ header .header-desc p {
     margin-top: 30px;
 }
 
-@media (min-width: 1280px) {}
+@media(min-width: 1024px) {
+    .projects {
+        display: block;
+        background-image: url('images/tablet_img.jpg');
+        background-repeat: no-repeat;
+        background-position: right 70%;
+        background-size: 50%;
+    }
+
+    .projects-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        width: 45vw;
+        margin-top: 90px;
+    }
+
+    .projects-box span:nth-child(1) {
+        padding-bottom: 20px;
+    }
+
+    .projects .info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .projects .info span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .projects h3 {
+        text-align: left;
+    }
+
+    .projects h3,
+    .projects p {
+        padding: 0px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .projects {
+        background-position: right 100%;
+        background-size: 45%;
+    }
+
+    .projects-box button {
+        transition: 1s;
+    }
+
+    .projects-box button:hover {
+        color: #000;
+        cursor: pointer;
+    }
+}
 
 /* SECTION CULTURE--------------------- */
 
