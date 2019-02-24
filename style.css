@@ -685,10 +685,14 @@ header .header-wrap p {
 .contact-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #222;
     color: #fff;
     padding: 0 8vw;
+}
+
+.contact-container .column:first-of-type {
+    padding-top: 30px;
 }
 
 .column {
@@ -716,8 +720,8 @@ header .header-wrap p {
 
 .contact-container i {
     padding: 10px;
+    font-size: 1rem;
 }
-
 
 @media(min-width: 1024px) {
     .contact-container {
@@ -747,11 +751,65 @@ header .header-wrap p {
 
 /* FOOTER---------------------------------------- */
 footer {
-    height: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 8vw;
 }
 
 footer p {
+    text-align: center;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     color: rgb(85, 85, 85);
-    padding: 20px 8vw;
+}
+
+.socials i {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 50%;
+}
+
+@media (min-width:1024px) {
+    footer {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .socials {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .socials i {
+        margin-top: 0;
+        transition: .3s;
+    }
+
+    .socials .fa-twitter:hover {
+        background-color: #1da1f2;
+    }
+
+    .socials .fa-facebook-f:hover {
+        background-color: #4267b2;
+    }
+
+    .socials .fa-pinterest:hover {
+        background-color: #e60023;
+    }
+
+    .socials .fa-google-plus:hover {
+        background-color: #d34836;
+    }
 }
