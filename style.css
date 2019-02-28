@@ -276,74 +276,39 @@ header .header-wrap p {
     }
 }
 
-/* SECTION SERVICES/CULTURE-VALUES ---------------------*/
-.services,
-.culture-values {
+/* SECTION SERVICES ---------------------*/
+.services {
     padding: 0 8vw;
 }
 
-.services p,
-.culture-values p {
+.services p {
     text-align: center;
     padding: 10px 0;
 }
 
-.services-container,
-.culture-container {
+.services-container {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.services-wrap,
-.culture-wrap {
+.services-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
     margin-top: 40px;
 }
 
-@media(min-width: 768px) {
-
-    .services-wrap,
-    .culture-wrap {
-        width: 250px;
-        margin-top: 35px;
-    }
-}
-
 @media(min-width: 1024px) {
-
-    .services-container,
-    .culture-container {
+    .services-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .services-wrap,
-    .culture-wrap {
-        width: 300px;
-        margin: 10px;
-    }
-}
-
-@media(min-width: 1280px) {
-
-    .services-wrap,
-    .culture-wrap {
-        margin: 30px;
-    }
-}
-
-@media(min-width: 1600px) {
-
-    .services-wrap,
-    .culture-wrap {
-        width: 400px;
-        margin: 40px;
+    .services-wrap {
+        margin: 20px;
     }
 }
 
@@ -456,7 +421,6 @@ header .header-wrap p {
 }
 
 .projects-container {
-    width: 280px;
     margin-top: 50px
 }
 
@@ -536,31 +500,74 @@ header .header-wrap p {
 
 /* SECTION CULTURE--------------------- */
 
+.culture-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.culture-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
 .culture-values {
     margin-top: 50px;
     padding: 50px 8vw;
-    background-color: #e9e9e9;
+    background-color: #f9f9f9;
+}
+
+.culture-values p {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.culture-img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 3px solid #777;
+    border-radius: 50%;
+    background-color: #f9f9f9;
 }
 
 .culture-wrap img {
-    border: 3px solid #777;
-    border-radius: 50%;
-    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (min-width: 1024px) {
     .culture-container {
         position: relative;
+        display: flex;
+        flex-direction: row;
     }
 
-    /* .line {
+    .culture-wrap {
+        margin: 10px;
+    }
+
+    .culture-container .line {
         position: absolute;
-        top: 22%;
-        left: 25vw;
-        width: calc(70% - 40vw);
+        top: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
         border-bottom: 3px solid #777;
-    } */
+    }
 }
+
+@media (min-width: 1280px) {
+    .culture-wrap {
+        margin: 10px 20px;
+    }
+}
+
 
 /* SECTION CLIENTS----------------------- */
 
@@ -594,7 +601,7 @@ header .header-wrap p {
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid #e9e9e9;
+    border-bottom: 20px solid #f9f9f9;
 }
 
 
@@ -611,7 +618,7 @@ header .header-wrap p {
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: #e9e9e9;
+    background-color: #f9f9f9;
 }
 
 @media (min-width:1024px) {
@@ -633,7 +640,7 @@ header .header-wrap p {
         height: 0;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
-        border-left: 20px solid #e9e9e9;
+        border-left: 20px solid #f9f9f9;
     }
 
     .clients-container+.clients-container>.arrow {
@@ -641,7 +648,7 @@ header .header-wrap p {
         height: 0;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
-        border-right: 20px solid #e9e9e9;
+        border-right: 20px solid #f9f9f9;
     }
 }
 
@@ -706,7 +713,7 @@ header .header-wrap p {
 
 .row,
 .row a {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
 }
