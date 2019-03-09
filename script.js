@@ -7,3 +7,10 @@ window.onscroll = () => {
         nav.style.top = -75 + "px";
     }
 }
+
+$('li a').on('click', function () {
+    const goToSection = "#" + $(this).attr('class');
+    $('body, html').animate({
+        scrollTop: $(goToSection).offset().top
+    }, 500)
+})

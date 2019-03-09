@@ -43,7 +43,6 @@ h1 {
 
 h2 {
     font-size: var(--h2-320);
-    margin-top: 30px;
 }
 
 h2,
@@ -51,7 +50,7 @@ h3 {
     color: #222;
     text-transform: uppercase;
     text-align: center;
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 411px) {
@@ -147,11 +146,6 @@ h3 {
 }
 
 /* HEADER ---------------------------------------------*/
-
-header {
-    min-height: 100vh;
-}
-
 header nav,
 .nav-fixed {
     width: 100%;
@@ -289,7 +283,7 @@ header .header-wrap p {
 
 /* SECTION SERVICES ---------------------*/
 .services {
-    padding: 0 8vw;
+    padding: 75px 8vw 0;
 }
 
 .services p {
@@ -346,7 +340,7 @@ header .header-wrap p {
     color: #fff;
     text-transform: uppercase;
     text-align: left;
-    padding: 50px 8vw 3vh;
+    padding: 75px 8vw 3vh;
 }
 
 .relax-container span {
@@ -418,7 +412,7 @@ header .header-wrap p {
 /* SECTION PROJECTS --------------------------------*/
 
 .projects {
-    padding: 50px 8vw 0;
+    padding: 75px 8vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -526,7 +520,7 @@ header .header-wrap p {
 
 .culture-values {
     margin-top: 50px;
-    padding: 50px 8vw;
+    padding: 75px 8vw;
     background-color: #f9f9f9;
 }
 
@@ -594,14 +588,12 @@ header .header-wrap p {
     }
 }
 
-
 /* SECTION CLIENTS----------------------- */
-
 .clients {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 8vw;
+    padding: 75px 8vw;
 }
 
 .clients>p {
@@ -629,7 +621,6 @@ header .header-wrap p {
     border-right: 20px solid transparent;
     border-bottom: 20px solid #f9f9f9;
 }
-
 
 .clients-container span {
     color: #7cc576;
@@ -679,7 +670,6 @@ header .header-wrap p {
 }
 
 /* SECTION CONTACT--------------------- */
-
 .contact-title {
     background-color: #7cc576;
     padding: 0 8vw;
@@ -693,6 +683,10 @@ header .header-wrap p {
     color: #fff;
 }
 
+.contact-title h2 {
+    padding-top: 75px;
+}
+
 .contact-title button {
     font-size: 1rem;
     font-weight: 700;
@@ -701,7 +695,7 @@ header .header-wrap p {
     border-radius: 10px;
     background-color: transparent;
     padding: 15px 25px;
-    margin: 20px 0 70px;
+    margin: 20px 0 35px;
     transition: .3s;
 }
 
