@@ -5,6 +5,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar {
+    background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7cc576;
+}
+
 :root {
     --h1-320: 2.5rem;
     --h1-411: 3rem;
@@ -43,6 +51,10 @@ h1 {
 
 h2 {
     font-size: var(--h2-320);
+}
+
+h3 {
+    padding-top: 20px;
 }
 
 h2,
@@ -146,6 +158,7 @@ h3 {
 }
 
 /* HEADER ---------------------------------------------*/
+
 header nav,
 .nav-fixed {
     width: 100%;
@@ -195,8 +208,7 @@ header .bar-hamburger {
 header .header-container {
     position: relative;
     height: 80vh;
-    background-image: url('images/header_bg.jpg');
-    background-repeat: no-repeat;
+    background: url('images/header_bg.jpg') no-repeat;
     background-size: cover;
     text-align: center;
 }
@@ -213,6 +225,47 @@ header .header-wrap {
 header .header-wrap p {
     color: #ccc;
     padding: 0 8vw;
+}
+
+header .bar-nav-mobile {
+    background-color: #7cc576;
+    width: 50vw;
+    height: 250px;
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    z-index: 2;
+    transition: .1s;
+}
+
+header .bar-nav-mobile.active {
+    right: 0;
+}
+
+header .bar-nav-mobile ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .bar-nav-mobile ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.faTimes {
+    padding: 15px 0;
+    border-bottom: none;
+    background-color: #222;
+}
+
+.fa-times {
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 @media(min-width: 768px) {
@@ -327,13 +380,12 @@ header .header-wrap p {
 }
 
 .relax-container {
-    background-image: url('images/cos_bg.jpg');
-    background-repeat: no-repeat;
+    background: url('images/cos_bg.jpg') no-repeat;
     background-size: cover;
 }
 
 .relax-wrap {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: #000000b3;
 }
 
 .relax-container h2 {
@@ -445,8 +497,7 @@ header .header-wrap p {
 @media(min-width: 1024px) {
     .projects {
         display: block;
-        background-image: url('images/tablet_img.jpg');
-        background-repeat: no-repeat;
+        background: url('images/tablet_img.jpg') no-repeat;
         background-position: right 70%;
         background-size: 50%;
     }
