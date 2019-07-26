@@ -1,4 +1,4 @@
 # TreeHouse
-Project from PSD (in progress)
+Project from PSD
 
  https://krisstok.github.io/TreeHouse/
